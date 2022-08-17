@@ -83,7 +83,7 @@ namespace Landis.Extension.Output.BiomassReclass
                 modelCore.UI.WriteLine("   Writing Biomass Reclass map to {0} ...", path);
                 using (IOutputRaster<BytePixel> outputRaster = modelCore.CreateRaster<BytePixel>(path, modelCore.Landscape.Dimensions))
                 {
-                    modelCore.UI.WriteLine("Reclass.Run - before site loop");
+                    //modelCore.UI.WriteLine("Reclass.Run - before site loop");
                     BytePixel pixel = outputRaster.BufferPixel;
                     foreach (Site site in modelCore.Landscape.AllSites)
                     {
@@ -94,7 +94,7 @@ namespace Landis.Extension.Output.BiomassReclass
                             //SiteVars.ForestType[site] = forestTypes[(int) forestType - 1].Name;
                             // Tweaked by John McNabb to account for cells without cohorts.
                             SiteVars.ForestType[site] = forestType == 0 ? "NonForest" : forestTypes[forestType - 1].Name;
-                            modelCore.UI.WriteLine($"SiteVars.ForestType[{site}] = {SiteVars.ForestType[site]}");
+                            //modelCore.UI.WriteLine($"SiteVars.ForestType[{site}] = {SiteVars.ForestType[site]}");
                         }
                         else
                             pixel.MapCode.Value = 0;
