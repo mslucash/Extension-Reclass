@@ -83,6 +83,7 @@ namespace Landis.Extension.Output.BiomassReclass
                 modelCore.UI.WriteLine("   Writing Biomass Reclass map to {0} ...", path);
                 using (IOutputRaster<BytePixel> outputRaster = modelCore.CreateRaster<BytePixel>(path, modelCore.Landscape.Dimensions))
                 {
+                    modelCore.UI.WriteLine("Reclass.Run - before site loop");
                     BytePixel pixel = outputRaster.BufferPixel;
                     foreach (Site site in modelCore.Landscape.AllSites)
                     {
