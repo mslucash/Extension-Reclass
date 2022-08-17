@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Landis.Extension.Output.BiomassReclass</RootNamespace>
+    <AssemblyName>Landis.Extension.Output.BiomassReclass-v3</AssemblyName>
+    <AssemblyTitle>Landis.Extension.Output.BiomassReclass-v3</AssemblyTitle>
+    <AssemblyCompany>Landis-II-Foundation</AssemblyCompany>
+    <AssemblyProduct>Landis.Extension.Output.BiomassReclass-v3</AssemblyProduct>
+    <AssemblyCopyright>Landis-II-Foundation</AssemblyCopyright>
+    <AssemblyVersion>3.1</AssemblyVersion>
+    <Version>3.1</Version>
+    <FileVersion>3.1.0.0</FileVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-Reclass</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>English</NeutralLanguage>
+    <Authors>Landis-II-Foundation</Authors>
+    <Product>Landis.Extension.Output.BiomassReclass-v3</Product>
+    <Copyright>Landis-II-Foundation</Copyright>
+    <Description>Extension Output Biomass Reclass</Description>
+    <PackageTags>LANDIS-II;Landis;Extension;Biomass;Reclassification</PackageTags>
+    <PackageLicenseUrl>https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-Reclass/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>http://www.landis-ii.org</PackageProjectUrl>
+    <PackageReleaseNotes>.NET Standard 2.0 update</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Landis.Core" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Landis.Library.AgeOnlyCohorts-v3">
+      <HintPath>lib\Landis.Library.AgeOnlyCohorts-v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Landis.Library.BiomassCohorts-v3">
+      <HintPath>lib\Landis.Library.BiomassCohorts-v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Landis.Library.Cohorts-v2">
+      <HintPath>lib\Landis.Library.Cohorts-v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Landis.Library.Metadata-v2">
+      <HintPath>lib\Landis.Library.Metadata-v2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
+
